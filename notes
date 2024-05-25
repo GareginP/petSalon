@@ -1,0 +1,21 @@
+let pet1={
+    name:"Lassie",
+    age:99,
+    gender:"Male",
+    service:"Grooming",
+    breed:"Rough Collie",
+}
+let pet2={
+    name:"Toto",
+    age:99,
+    gender:"Male",
+    service:"Grooming",
+    breed:"Cairn Terrier",
+}
+let pet3={
+    name:"Snoopy",
+    age:99,
+    gender:"Male",
+    service:"Grooming",
+    breed:"Pitbull",
+}

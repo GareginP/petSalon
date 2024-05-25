@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2>Register a new pet</h2>
+        <div>
+            <div class="input-control">
+                <label>Name:*</label>
+                <input type="text" id="txtName">
+            </div>
+            <div class="input-control">
+                <label>Age:</label>
+                <input type="number" id="txtAge">
+            </div>
+            <div class="input-control">
+                <label>Gender:</label>
+                <input type="text" id="txtGender">
+            </div>
+            <div class="input-control">
+                <label>Service:*</label>
+                <select id="txtService" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Grooming">-- Grooming --</option>
+                    <option value="Vaccines"> Vaccines --</option>
+                </select>
+            </div>
+            
+            <div class="btn-container">
+                <button class="btn btn-primary" onclick="register();">Register</button>
+            </div>
+        </div>
+    </main>
+    <div id="petNames">
+
+    </div>
+
+    <script src="./scripts.js/practice.js"></script>
+</body>
+</html>
