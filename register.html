@@ -3,26 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css"> 
     <title>Document</title>
 </head>
 <body>
-    <header>Register</header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="register.html">Register</a>
-    </nav>
-    <!--<button onclick="displayNames()">Pet Names</button>-->
-
-    <div>
-        <img src= https://th.bing.com/th/id/OIP.2RbQnqpeIf85MZxFKN10zwHaD9?w=309&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7>
-    </div>
-
-    <div id="petList">
+    <header class="site-init">
+        <div class="menu-bar">
+            <h1>Pet Salon</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                </nav>    
+        </div>
+        <div class="header-info">
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
+            </div>
+            <div>
+                <img src= https://th.bing.com/th/id/OIP.2RbQnqpeIf85MZxFKN10zwHaD9?w=309&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div  class="register-info">
+        <h2>Register A New Pet</h2>
+        </nav>      
+            <div class="input-control">
+                <label>Name:*</label>
+                <input type="text" id="txtName">
+            </div>
+            <div class="input-control">
+                <label>Age:</label>
+                <input type="number" id="txtAge">
+            </div>
+            <div class="input-control">
+                <label>Gender:</label>
+                <input type="text" id="txtGender">
+            </div>
+            
+            <div class="input-control">
+                <label>Service:*</label>
+                <select id="txtService" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Grooming">-- Grooming --</option>
+                    <option value="Vaccines"> Vaccines --</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label>Breed:</label>
+                <input type="text" id="txtBreed">
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-primary" onclick="register();">Register</button>
+            </div>           
+        </div>
+    </main>
+    <div id="petNames">
 
     </div>
 
     <script src="./scripts.js/register.js"></script>
-    
 </body>
 </html>

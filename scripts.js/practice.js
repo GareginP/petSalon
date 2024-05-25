@@ -21,8 +21,7 @@ function register(){
     let inputGender = document.getElementById("txtGender").value;
     let inputService = document.getElementById("txtService").value;
     let newPet = (inputName,inputName,inputGender,inputService);
-    petSalon.pets.push(newPet);
-    console.log(petSalon.pets);
+
 }
 
 function init(){

@@ -19,3 +19,35 @@ let pet3={
     service:"Grooming",
     breed:"Pitbull",
 }
+
+
+<header>Register</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+</nav>
+
+<div>
+<img src= https://th.bing.com/th/id/OIP.2RbQnqpeIf85MZxFKN10zwHaD9?w=309&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7>
+</div>
+
+
+{name:"Lassie",
+age:99,
+gender:"Male",
+service:"Grooming",
+breed:"Rough Collie",
+},
+{name:"Toto",
+age:99,
+gender:"Male",
+service:"Grooming",
+breed:"Cairn Terrier",
+},
+{name:"Snoopy",
+age:99,
+gender:"Male",
+service:"Grooming",
+breed:"Pitbull",
+}
