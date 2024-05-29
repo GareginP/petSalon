@@ -14,19 +14,41 @@ let petSalon ={
 pets:[] 
 }    
 //constructor...
-function Pet(name,age,gender,service,breed){
+function Pet(name,age,gender,breed,genus,service){
     //properties=parameter;
     this.name=name;
     this.age=age;
     this.gender=gender;
-    this.service=service;
     this.breed=breed;
+    this.genus=genus;
+    this.service=service;
 }
 function isValid(aPet){
     let validation=true;
 
     if(aPet.name==""){
         validation=false;
+        document.getElementById("txtName").classList.add("alert-error");
+    }
+    if(aPet.name==""){
+        validation=false;
+        document.getElementById("txtAge").classList.add("alert-error")
+    }
+    if(aPet.name==""){
+        validation=false;
+        document.getElementById("txtGender").classList.add("alert-error")
+    }
+    if(aPet.name==""){
+        validation=false;
+        document.getElementById("txtBreed").classList.add("alert-error")
+    }
+    if(aPet.name==""){
+        validation=false;
+        document.getElementById("txtGenus").classList.add("alert-error")
+    }
+    if(aPet.name==""){
+        validation=false;
+        document.getElementById("txtService").classList.add("alert-error")
     }
     return validation;
 }
@@ -34,20 +56,36 @@ function register(){
     let inputName = document.getElementById("txtName").value;
     let inputAge = document.getElementById("txtAge").value;
     let inputGender = document.getElementById("txtGender").value;
-    let inputService = document.getElementById("txtService").value;
     let inputBreed = document.getElementById("txtBreed").value;
-    let newPet = new Pet(inputName,inputAge,inputGender,inputService,inputBreed);   
+    let inputGenus = document.getElementById("txtGenus").value;
+    let inputService = document.getElementById("txtService").value;
+    
+    let newPet = new Pet(inputName,inputAge,inputGender,inputBreed,inputGenus,inputService);  
+    if(isValid(newPet)){
     petSalon.pets.push(newPet);
-    console.log(petSalon.pets);
+    displayCards();
+    displayRows(); 
+    displayTotalPets();
+    }
 }
+
+function deletePet(index){
+    petSalon.pets.splice(index, 1);
+    displayCards();
+    displayRows(); 
+    displayTotalPets();
+}
+
 function init(){
-    let pet1 = new Pet("Lassie",23,"Female","Grooming");
-    let pet2 = new Pet("Toto",25,"Male","Grooming");
-    let pet3 = new Pet("Snoopy",60,"Male","Grooming");
-    petSalon.pets.push(pet1,);
-    petSalon.pets.push(pet2,);
-    petSalon.pets.push(pet3,);
-    console.log(petSalon.pets);                                                                                        9
+    let pet1 = new Pet("Lassie",23,"Female","Rough Collie","Dog","Grooming");
+    let pet2 = new Pet("Toto",25,"Female","Cairn Terrier","Dog","Grooming");
+    let pet3 = new Pet("Snoopy",60,"Male","Pitbull","Dog","Grooming");
+    petSalon.pets.push(pet1);
+    petSalon.pets.push(pet2);
+    petSalon.pets.push(pet3);
+    displayCards(); 
+    displayRows();
+    displayTotalPets();                                                                                       9
 }
 window.onload=init;
 

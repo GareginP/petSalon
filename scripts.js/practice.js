@@ -14,6 +14,19 @@ function Pet(name,age,gender,service){
     this.gender=gender;
     this.service=service;
 }
+function isValid(aPet){
+    let validation=true;
+
+    if(aPet.name==""){
+        validation=false;
+        document.getElementById("txtName").classList.add("alert-error");
+    }
+    if(aPet.name==""){
+        validation=false;
+        document.getElementById("txtAge").classList.add("alert-error")
+    }
+    return validation;
+}
 
 function register(){
     let inputName = document.getElementById("txtName").value;
@@ -25,12 +38,6 @@ function register(){
 }
 
 function init(){
-    let pet1 = new Pet("Lassie",23,"Female","Grooming");
-    let pet2 = new Pet("Toto",25,"Male","Grooming");
-    let pet3 = new Pet("Snoopy",60,"Male","Grooming");
-    petSalon.pets.push(pet1,);
-    petSalon.pets.push(pet2,);
-    petSalon.pets.push(pet3,);
     console.log(petSalon.pets);                                                                                        9
 
 }

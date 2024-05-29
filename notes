@@ -51,3 +51,10 @@ gender:"Male",
 service:"Grooming",
 breed:"Pitbull",
 }
+
+let pet1 = new Pet("Lassie",23,"Female","Grooming");
+let pet2 = new Pet("Toto",25,"Male","Grooming");
+let pet3 = new Pet("Snoopy",60,"Male","Grooming");
+petSalon.pets.push(pet1,);
+petSalon.pets.push(pet2,);
+petSalon.pets.push(pet3,);

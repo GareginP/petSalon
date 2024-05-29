@@ -19,9 +19,6 @@
             <div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores.</p>
             </div>
-            <div>
-                <img src= https://th.bing.com/th/id/OIP.2RbQnqpeIf85MZxFKN10zwHaD9?w=309&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7>
-            </div>
         </div>
     </header>
     <main>
@@ -33,35 +30,66 @@
                 <input type="text" id="txtName">
             </div>
             <div class="input-control">
-                <label>Age:</label>
+                <label>Age*:</label>
                 <input type="number" id="txtAge">
             </div>
             <div class="input-control">
                 <label>Gender:</label>
                 <input type="text" id="txtGender">
             </div>
-            
+            <div class="input-control">
+                <label>Breed:</label>
+                <input type="text" id="txtBreed">
+            </div>
+            <div class="input-control">
+                <label>Genus:*</label>
+                <select id="txtGenus" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Dog">-- Dog --</option>
+                    <option value="Cat">-- Cat --</option>
+                </select>
+            </div>
             <div class="input-control">
                 <label>Service:*</label>
                 <select id="txtService" >
                     <option value="" selected disabled>-- Select an option --</option>
                     <option value="Grooming">-- Grooming --</option>
-                    <option value="Vaccines"> Vaccines --</option>
+                    <option value="Vaccines">-- Vaccines --</option>
                 </select>
             </div>
-            <div class="input-control">
-                <label>Breed:</label>
-                <input type="text" id="txtBreed">
-            </div>
+            
             <div class="btn-container">
-                <button class="btn btn-primary" onclick="register();">Register</button>
+                <button onclick="register();">Register</button>
             </div>           
         </div>
     </main>
-    <div id="petNames">
-
-    </div>
+    <section class="container">
+        <h2 >Register Pets</h2>
+        <div class="info">
+                <p>Total Pets = <span id="total"></span></p>
+        </div>
+        <div id="petDiv" class="idSect">
+        </div>
+      
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Breed</th>
+                    <th>Genus</th>
+                    <th>Service</th>
+                    <th>Action</th>
+                </tr>    
+            </thead>
+            
+            <tbody id="petTable">
+            </tbody>
+        </table>
+    </section>
 
     <script src="./scripts.js/register.js"></script>
+    <script src="./scripts.js/display.js"></script>
 </body>
 </html>
