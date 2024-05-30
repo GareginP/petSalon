@@ -85,7 +85,7 @@ function init(){
     petSalon.pets.push(pet3);
     displayCards(); 
     displayRows();
-    displayTotalPets();                                                                                       9
+    displayTotalPets();                                                                                      9
 }
 window.onload=init;
 
