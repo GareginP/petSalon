@@ -40,6 +40,6 @@ function displayRows(){
     }
 }
 function displayTotalPets(){
-    document.getElementById("total").innerHTML=petSalon.pets.length;
-    
+    document.getElementById("total").innerHTML=petSalon.pets.length;  
 }
+
