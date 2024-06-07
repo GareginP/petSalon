@@ -26,25 +26,28 @@
         <main>
             <div class="register-info">
             <h2>Register a new service</h2>
-            <div class="input-control">
+            <div class="input-controltwo">
             <div class="mb-3">
                 <label class="form-label">Description:</label>
                 <input class="form-control" type="text" id="txtDescription">
             </div>
-            <div div class="input-control">
+            <div div class="input-controltwo">
                 <div class="mb-3">
                     <label class="form-label">Price:</label>
                     <input class="form-control" type="number" id="txtPrice">
             </div>
-            <div class="input-control">
-                <button onclick="register();">Register</button>
+            <div class="input-controltwo">
+                <button id="registerBtn">Register</button>
             </div>
             
         </div>
+
+        <div id="servicesList" class="services-list"></div>
         </main>
 
 
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <scripr src="./scripts.js/storeManager.js"></scripr>
         <script src="./scripts.js/services.js"></script>
         <script src="./scripts.js/display.js"></script>
 

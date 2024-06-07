@@ -63,6 +63,7 @@ function register(){
     let newPet = new Pet(inputName,inputAge,inputGender,inputBreed,inputGenus,inputService);  
     if(isValid(newPet)){
     petSalon.pets.push(newPet);
+    
     displayCards();
     displayRows(); 
     displayTotalPets();

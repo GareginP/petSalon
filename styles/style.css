@@ -56,6 +56,11 @@ img{
     flex-direction: column;
 
 }
+.input-controltwo{
+    padding-top: 1.5rem;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
 /*petcards*/
 #petDiv{
     display: grid;
@@ -110,5 +115,22 @@ footer {
     height: auto;
     margin-top: 4rem;
 
+}
+.service-card {
+    border: 1px solid #ccc;
+    border-radius: 3rem;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+    background-color: #808d9a;
+}
+
+.service-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert-error {
+    border: 1px solid red;
 }
 
