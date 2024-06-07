@@ -70,7 +70,14 @@ function register(){
     
     }
 }
-
+function getServices(){
+    let serviceList = readItems();
+    let option;
+    for(let i=0;i<serviceList.length;i++){
+    option=`<option value="${serviceList[i].description}">${serviceList[i].description} </option>`;
+    $("#txtService").append(option);
+}
+}
 function deletePet(index){
     petSalon.pets.splice(index, 1);
     displayCards();
@@ -87,7 +94,8 @@ function init(){
     petSalon.pets.push(pet3);
     displayCards(); 
     displayRows();
-    displayTotalPets();                                                                                      9
+    displayTotalPets();
+    getServices();                                                                                     9
 }
 window.onload=init;
 

@@ -70,7 +70,7 @@ function displayServices() {
         }
     }
     function displayServices() {
-        let services = getItems();
+        let services = readItems();
         let servicesList = $("#servicesList");
         servicesList.empty(); // Clear current list
     

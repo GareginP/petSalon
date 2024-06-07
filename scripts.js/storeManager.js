@@ -7,11 +7,10 @@ function saveItem(item){
 function readItems(){
     let data = localStorage.getItem("services");
 
-    if(!data){
+if(!data){
         return [];
     }else{
         let list = JSON.parse(data);
         return list;
     }
-
 ;}
